@@ -135,9 +135,6 @@ backend/
 
 ## Полезные команды
 ```bash
-# Просмотр логов
-docker-compose logs -f backend
-
 # Остановка
 docker-compose down
 

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telegram интеграция</title>
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+<h1>Настройка уведомлений в Telegram</h1>
+
+<div id="form-container">
+    <label>
+        Bot Token
+        <input type="text" id="botToken" placeholder="Секретный токен не показывается" />
+    </label>
+
+    <label>
+        Chat ID
+        <input type="text" id="chatId" placeholder="-1001234567890 или 123456789" />
+    </label>
+
+    <label class="checkbox-label">
+        <input type="checkbox" id="enabled" />
+        Включено
+    </label>
+
+    <button id="save-button">Сохранить</button>
+    <div id="message"></div>
+</div>
+
+<div id="status-container" class="status">
+    Загрузка статуса...
+</div>
+
+<div class="help">
+    <strong>Как узнать chatId:</strong><br/>
+    1. Напишите боту @userinfobot в Telegram → он пришлёт ваш личный chat_id<br/>
+    2. Для группы/канала добавьте @getidsbot или @myidbot → бот напишет id чата (обычно начинается с -100...)<br/><br/>
+    После сохранения Chat ID будет замаскирован для безопасности.
+</div>
+
+<script>
+    const shopId = {{.ShopID}};
+</script>
+<script src="/static/script.js"></script>
+
+</body>
+</html>
