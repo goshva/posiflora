@@ -146,6 +146,7 @@ docker-compose down -v
 - `POST /shops/{id}/telegram/connect` - подключение Telegram
 - `POST /shops/{id}/orders` - создание заказа
 - `GET /shops/{id}/telegram/status` - статус интеграции
+## API Endpoints  можно реализовать для  удобства
 - `GET /shops/{id}` - информация о магазине
 - `POST /shops/seed` - тестовые данные магазина
 - `POST /orders/seed` - тестовые данные заказов
